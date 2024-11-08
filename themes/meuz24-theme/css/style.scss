@@ -1,0 +1,163 @@
+@import url('../../../node_modules/normalize.css/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+$primary-color: #9d8189;
+$secondary-color: #fed8eb;
+$accent-color: #ffe1e5;
+$new-accent-color: #9a6c8f;
+$header-footer-padding: 1rem 2rem;
+$background-color: #fff4f8;
+$main-background: #ffe8f2;
+$header-footer-text-color: #4e3538;
+$link-hover-color: #865371;
+$footer-border-color: #d7b3bc;
+$heading-color: #7f6068;
+$text-color: #a87a83;
+$code-background: #ffd9e0;
+$blockquote-color: #c4a1a8;
+$code-text-color: #8b5a61;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: $background-color;
+  color: $primary-color;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  line-height: 1.6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  max-width: 100%;
+}
+
+a {
+  color: $new-accent-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.main {
+  background-color: $main-background;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  flex: 1;
+  margin: 1rem auto;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.header {
+  align-items: center;
+  background-color: $accent-color;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+  color: $header-footer-text-color;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  padding: $header-footer-padding;
+
+  .logo img {
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    max-width: 60px;
+  }
+
+  .title {
+    color: $primary-color;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+.footer {
+  align-items: center;
+  background-color: $accent-color;
+  border-top: 1px solid $footer-border-color;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+  color: $header-footer-text-color;
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-between;
+  margin-top: auto;
+  padding: $header-footer-padding;
+
+  .social {
+    font-size: 1.5rem;
+
+    a {
+      color: $new-accent-color;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+@media (width <= 767px) {
+  .header,
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+p,
+li {
+  color: $text-color;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  color: $primary-color;
+  padding-left: 1.5rem;
+}
+
+code,
+pre {
+  background: $code-background;
+  border-radius: 4px;
+  color: $code-text-color;
+  font-family: 'Courier New', monospace;
+  padding: 0.2em 0.4em;
+}
+
+blockquote {
+  border-left: 3px solid $new-accent-color;
+  color: $blockquote-color;
+  font-style: italic;
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+}

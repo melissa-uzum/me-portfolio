@@ -14,8 +14,19 @@
     <link rel="canonical" href="{{ current_page.url }}" />
     {% endif %}
 
-    <link rel="icon" href="{{ theme_url }}/../shared/img/favicon.ico">
-    <link rel="stylesheet" href="{{ theme_url }}/../shared/css/font-awsome.min.css" type="text/css" />
+    <link rel="icon" href="{{ theme_url }}/assets/img/favicon.ico">
+    <link rel="stylesheet" href="{{ theme_url }}/../shared/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="{{ theme_url }}/css/mobile-menu.css" type="text/css" />
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/css/normalize.css" type="text/css" />
 </head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="{{ theme_url }}/assets/img/logo.png" alt="Site Logo">
+        </div>
+        <h1>{{ site_title }}</h1>
+        <p>{{ tagline }}</p>
+    </header>
+</body>
