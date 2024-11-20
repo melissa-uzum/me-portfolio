@@ -45,13 +45,82 @@ img {
   max-width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+p,
+li {
+  color: $text-color;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  color: $primary-color;
+  list-style: none;
+  padding: 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
 a {
   color: $new-accent-color;
   text-decoration: none;
+}
 
-  &:hover {
-    color: $link-hover-color;
-  }
+a:hover {
+  color: $link-hover-color;
+}
+
+.grid-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  align-items: center;
+  background-color: $accent-color;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+  color: $header-footer-text-color;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  padding: $header-footer-padding;
+}
+
+.header .logo img {
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+  max-width: 60px;
+}
+
+.header .title {
+  color: $primary-color;
+  font-weight: bold;
 }
 
 .main {
@@ -64,27 +133,33 @@ a {
   padding: 2rem;
 }
 
-.header {
-  align-items: center;
-  background-color: $accent-color;
-  box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
-  color: $header-footer-text-color;
-  display: flex;
-  font-size: 1rem;
-  justify-content: space-between;
-  padding: $header-footer-padding;
+.sidebar {
+  background-color: $main-background;
+  border-radius: 8px;
+  color: $primary-color;
+  padding: 20px;
+}
 
-  .logo img {
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
-    max-width: 60px;
-  }
+.sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
 
-  .title {
-    color: $primary-color;
-    font-size: 2rem;
-    font-weight: bold;
-  }
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: $primary-color;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
 }
 
 .footer {
@@ -98,66 +173,90 @@ a {
   justify-content: space-between;
   margin-top: auto;
   padding: $header-footer-padding;
+}
 
-  .social {
-    font-size: 1.5rem;
+.footer .social a {
+  color: $new-accent-color;
+}
 
-    a {
-      color: $new-accent-color;
+.footer .social a:hover {
+  color: $link-hover-color;
+}
 
-      &:hover {
-        color: $link-hover-color;
-      }
-    }
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+@media (width <= 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (width <= 767px) {
-  .header,
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $heading-color;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-p,
-li {
-  color: $text-color;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-ul,
-ol {
+.grid-item {
+  background-color: $background-color;
+  border-radius: 8px;
   color: $primary-color;
-  padding-left: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-code,
-pre {
-  background: $code-background;
-  border-radius: 4px;
-  color: $code-text-color;
-  font-family: 'Courier New', monospace;
-  padding: 0.2em 0.4em;
+.grid-item:hover {
+  transform: scale(1.05);
 }
 
-blockquote {
-  border-left: 3px solid $new-accent-color;
-  color: $blockquote-color;
-  font-style: italic;
-  margin: 1.5rem 0;
-  padding-left: 1rem;
+.technology-layout {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 250px 1fr;
+  padding: 20px;
+}
+
+@media (width <= 768px) {
+  .technology-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .technology-layout .sidebar {
+    order: -1;
+  }
+}
+
+.content {
+  background-color: $main-background;
+  border-radius: 8px;
+  color: $primary-color;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.technology-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (width <= 768px) {
+  .technology-page {
+    flex-direction: column;
+  }
+
+  .technology-page .sidebar {
+    display: block;
+  }
 }

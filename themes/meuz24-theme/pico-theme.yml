@@ -1,16 +1,21 @@
 api_version: 3                  # Use Pico's latest API version for themes
 
 
+name: meuz24 Theme              # Name of the theme
+version: 1.0                    # Theme version
+description: A custom theme for showcasing technologies.
+author: Melissa                 # Author name
+api_version: 3                  # Use Pico's latest API version for themes
+
 meta:                           # Register meta headers used by this theme
     Logo: logo                  # The URL to your website's logo (value is passed to Pico's "url" Twig filter)
-    Tagline: tagline            # Your website's tag line, shown right below your site title (supports Markdown)
-    Social: social              # A list of social icons that will be shown in your website's footer;
-                                #     You must specify a "title", "url" and "icon" per entry
-
+    Tagline: tagline            # Your website's tagline, shown right below your site title (supports Markdown)
+    Social: social              # A list of social icons to be shown in your footer; specify "title", "url", and "icon"
 
 twig_config:                    # Twig template engine config
-    autoescape: html            # Let Twig escape variables by default
-    strict_variables: false     # If set to true, Twig will bail out when unset variables are being used
-    charset: utf-8              # The charset used by Twig templates
+    autoescape: html            # Automatically escape variables by default
+    strict_variables: false     # If true, Twig will throw errors for unset variables
+    charset: utf-8              # Character set for Twig templates
 
-widescreen: false               # Use more horicontal space (i.e. make the site container wider)
+widescreen: false               # Use more horizontal space (i.e., make the site container wider)
+
