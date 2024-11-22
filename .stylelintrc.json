@@ -1,11 +1,11 @@
 {
-    "extends": "stylelint-config-standard",
-    "plugins": [
-      "stylelint-scss",
-      "stylelint-order"
-    ],
-    "rules": {
-      "order/properties-alphabetical-order": true,
-      "scss/at-import-partial-extension-disallowed-list": null
-    }
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order"
+  ],
+  "rules": {
+    "order/properties-alphabetical-order": true,
+    "scss/at-import-partial-extension-disallowed-list": null
+  }
 }
