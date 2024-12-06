@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,8 +16,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  font-family: Poppins, sans-serif;
   justify-content: space-between;
-  font-family: "Poppins", sans-serif;
   line-height: 1.6;
 }
 
@@ -53,7 +54,7 @@ a:hover {
 .main {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   flex: 1 0 auto;
   margin: 0 auto;
   max-width: 800px;
@@ -68,7 +69,7 @@ a:hover {
 .image-container img {
   border: 4px solid #7bdeff;
   border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
   height: 100px;
   max-width: 100px;
 }
@@ -203,23 +204,24 @@ blockquote {
   padding: 1em;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .header,
   .footer {
     align-items: center;
     flex-direction: column;
     text-align: center;
   }
+
   .header .logo img {
     margin-bottom: 1em;
   }
+
   .footer .social {
     justify-content: center;
     margin-top: 1em;
   }
+
   .main {
     padding: 1.5em;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

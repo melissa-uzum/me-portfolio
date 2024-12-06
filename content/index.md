@@ -3,14 +3,12 @@ Title: Home
 Description: This is our index page.
 ---
 
-Välkommen
-==========================
-
-Hej och välkommen till min portfolio! Jag heter Melissa Üzüm och studerar Webbprogrammering!
-
 <div class="image-container">
     <img src="assets/img/me.jpg" alt="Bild på mig">
 </div>
+
+Hej och välkommen till min portfolio! Jag heter Melissa Üzüm och studerar Webbprogrammering!
+
 
 ### Om mig
 
