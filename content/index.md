@@ -3,9 +3,21 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
+Välkommen
 ==========================
 
-The source for this page is in `content/index.md`.
+Hej och välkommen till min portfolio! Jag heter Melissa Üzüm och studerar Webbprogrammering!
 
-This is a sample home page written in markdown with some frontmatter defined.
+<div class="image-container">
+    <img src="assets/img/me.jpg" alt="Bild på mig">
+</div>
+
+### Om mig
+
+Jag har nu påbörjat läsperiod 2, första perioden gick väldigt bra och jag lärde mig väldigt mycket! Jag arbetar som säljare på Apple samtidigt som jag studerar.
+
+När jag inte programmerar, tycker jag om att:
+
+- Spela spel såsom Elden Ring och Uncharted.
+- Gymma och äta glass.
+- Ta en tupplur med min katt.

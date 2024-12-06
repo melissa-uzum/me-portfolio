@@ -1,5 +1,5 @@
 ---
-Logo: image/leaf_256x256.png
+Logo: image/android-chrome-192x192.png
 Tagline: My portfolio.
 Social:
     - title: Link till sidans github repo.
