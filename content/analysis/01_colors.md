@@ -19,7 +19,7 @@ Jag använde följande verktyg för att analysera färger och typografi:
 
 ### Pågen
 #### Snapshot
-![Bild av Pågen](/dbwebb/design/me/portfolio/content/analysis/img/pagen.png)
+![Bild av Pågen](/~meuz24/dbwebb-kurser/design/me/portfolio/content/analysis/img/pagen.png)
 
 
 #### Färgpalett
@@ -41,7 +41,7 @@ Pågens färger, typografi samt media matchar dess profil, man får en fin inbli
 
 ### Apple
 #### Snapshot
-![Bild av Apple](/dbwebb/design/me/portfolio/content/analysis/img/apple.png)
+![Bild av Apple](/~meuz24/dbwebb-kurser/design/me/portfolio/content/analysis/img/apple.png)
 
 #### Färgpalett
 <table style="border-spacing: 4px; border-collapse: separate">
@@ -63,7 +63,7 @@ Apple har ett väldigt modernt utseende dess typografi är väldigt minimalistis
 
 ### Elden Ring
 #### Snapshot
-![Bild av Elden Ring](/dbwebb/design/me/portfolio/content/analysis/img/elden_ring.png)
+![Bild av Elden Ring](/~meuz24/dbwebb-kurser/design/me/portfolio/content/analysis/img/elden_ring.png)
 
 #### Färgpalett
 <table style="border-spacing: 4px; border-collapse: separate">

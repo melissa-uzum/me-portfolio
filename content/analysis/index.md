@@ -14,7 +14,7 @@ Välkommen till mina rapporter. Här kommer jag att utföra analyser av tre olik
 
 ## Rapporter
 
-1. [Färganalys](/dbwebb/design/me/portfolio/analysis/01_colors/)
+1. [Färganalys](/~meuz24/dbwebb-kurser/design/me/portfolio/analysis/01_colors/)
    Utför en analys av färgscheman och typografi på olika webbplatser.
 
 2. [Laddningstidsanalys](/dbwebb/design/me/portfolio/analysis/02_load/)
