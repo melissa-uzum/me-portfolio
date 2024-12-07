@@ -1,0 +1,43 @@
+{% include "incl/header.twig" %}
+{% include "incl/nav.twig" %}
+
+<main class="technology-layout">
+    <aside class="sidebar">
+        <h3>Technologies</h3>
+        <ul>
+            {% if pages is defined and pages is not empty %}
+                {% for p in pages %}
+                    {% if p.id starts with "technology/" %}
+                        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <li>No technologies available</li>
+            {% endif %}
+        </ul>
+    </aside>
+
+    <section class="content">
+        {# Ensure the current page is correctly matched and displayed #}
+        {% set current_uri = current_page.url ?? app.request.uri %}
+        {% set currentPage = pages|filter(p => current_uri|trim('/') == p.url|trim('/'))|first %}
+
+        {# Debugging matched page (remove this for production) #}
+
+
+        {% if currentPage is defined and currentPage is not empty %}
+            <h1>{{ currentPage.title }}</h1>
+            {% if currentPage.description is not empty %}
+                <p>{{ currentPage.description }}</p>
+            {% endif %}
+            <article>{{ currentPage.content|raw }}</article>
+        {% else %}
+            <h1>No Content Available</h1>
+            <p>We couldn't load the content for this page. Please check if the Markdown file exists, has the correct metadata, and matches the URL.</p>
+        {% endif %}
+    </section>
+</main>
+
+
+{% include "incl/footer.twig" %}
+

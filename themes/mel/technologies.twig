@@ -1,0 +1,20 @@
+{% include "incl/header.twig" %}
+{% include "incl/nav.twig" %}
+
+<main role="main">
+    <div class="grid-container">
+        <h1 class="title">Technologies</h1>
+
+        {% for key, tech in config.technologies %}
+        <div class="grid-item">
+            <a href="{{ tech.url }}">
+                <h2>{{ tech.title }}</h2>
+                <p>Learn more about {{ tech.title }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+
+
+{% include "incl/footer.twig" %}

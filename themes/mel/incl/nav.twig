@@ -13,28 +13,35 @@
                 {{ pages["_meta"].meta.tagline|markdown }}
             </a>
         </div>
-
     </div>
     <div class="nav">
         <div id="nav" role="navigation" tabindex="-1">
             <ul>
-    {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
-        <li{% if page.id == current_page.id %} class="active" {% endif %}>
-            <a href="{{ page.url }}">
-                {% if page.id == 'index' %}
-                    <i class="fa-solid fa-house"></i> Home
-                {% elseif page.id == 'about' %}
-                    <i class="fa-solid fa-address-card"></i> About
-                {% elseif page.id starts with 'docs' %}
-                    <i class="fa-solid fa-file"></i> Docs
-                {% else %}
-                    {{ page.title }}
-                {% endif %}
-            </a>
-        </li>
-    {% endfor %}
-</ul>
-
+                {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+                <li{% if page.id == current_page.id %} class="active" {% endif %}>
+                    <a href="{{ page.url }}">
+                        {% if page.id == 'index' %}
+                        <i class="fa-solid fa-house"></i> Home
+                        {% elseif page.id == 'about' %}
+                        <i class="fa-solid fa-address-card"></i> About
+                        {% elseif page.id == 'analysis/index' %}
+                        <i class="fa-solid fa-magnifying-glass"></i> Analysis
+                        {% elseif page.id starts with 'docs' %}
+                        <i class="fa-solid fa-file"></i> Docs
+                        {% elseif page.id starts with 'technology/index' %}
+                        <i class="fa-solid fa-gears"></i> Technologies
+                        {% else %}
+                        {{ page.title }}
+                        {% endif %}
+                    </a>
+                </li>
+                {% endfor %}
+                <li class="theme-toggle">
+                    <button id="theme-switcher" aria-label="Toggle theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

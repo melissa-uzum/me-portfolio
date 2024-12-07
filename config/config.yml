@@ -57,3 +57,63 @@ DummyPlugin.enabled: false          # Force the plugin "DummyPlugin" to be disab
 # Custom
 #
 shaded_url: themes/shared     # You can access custom settings in themes using {{ config.my_custom_setting }}
+
+##
+# Technology Links
+#
+technologies:
+  css:
+    url: /dbwebb/design/me/portfolio/technology/css
+    title: CSS
+  html:
+    url: /dbwebb/design/me/portfolio/technology/html
+    title: HTML
+  scss:
+    url: /dbwebb/design/me/portfolio/technology/scss
+    title: SCSS
+  javascript:
+    url: /dbwebb/design/me/portfolio/technology/javascript
+    title: JavaScript
+  fontawesome:
+    url: /dbwebb/design/me/portfolio/technology/fontawesome
+    title: Font Awesome
+  googlefonts:
+    url: /dbwebb/design/me/portfolio/technology/googlefonts
+    title: Google Fonts
+  pico:
+    url: /dbwebb/design/me/portfolio/technology/pico
+    title: Pico
+  coolors:
+    url: /dbwebb/design/me/portfolio/technology/coolors
+    title: Coolors
+
+##
+# Sidebar Links cos its not working :(
+#
+sidebar:
+  technologies:
+    css:
+      url: /dbwebb/design/me/portfolio/technology/css
+      title: CSS
+    html:
+      url: /dbwebb/design/me/portfolio/technology/html
+      title: HTML
+    scss:
+      url: /dbwebb/design/me/portfolio/technology/scss
+      title: SCSS
+    javascript:
+      url: /dbwebb/design/me/portfolio/technology/javascript
+      title: JavaScript
+    fontawesome:
+      url: /dbwebb/design/me/portfolio/technology/fontawesome
+      title: Font Awesome
+    googlefonts:
+      url: /dbwebb/design/me/portfolio/technology/googlefonts
+      title: Google Fonts
+    pico:
+      url: /dbwebb/design/me/portfolio/technology/pico
+      title: Pico
+    coolors:
+      url: /dbwebb/design/me/portfolio/technology/coolors
+      title: Coolors
+
