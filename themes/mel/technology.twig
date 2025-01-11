@@ -22,9 +22,6 @@
         {% set current_uri = current_page.url ?? app.request.uri %}
         {% set currentPage = pages|filter(p => current_uri|trim('/') == p.url|trim('/'))|first %}
 
-        {# Debugging matched page (remove this for production) #}
-
-
         {% if currentPage is defined and currentPage is not empty %}
             <h1>{{ currentPage.title }}</h1>
             {% if currentPage.description is not empty %}

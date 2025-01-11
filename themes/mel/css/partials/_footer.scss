@@ -1,0 +1,72 @@
+@use "_variables";
+
+
+.footer {
+    align-items: center;
+    background-color: variables.$primary-color;
+    border-top: 2px solid variables.$secondary-color;
+    color: variables.$white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 2em;
+    width: 100%;
+
+    .social {
+      display: flex;
+      font-size: 1.5rem;
+      gap: 1em;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  }
+
+
+.header {
+    align-items: center;
+    background-color: variables.$primary-color;
+    color: variables.$bg-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    width: 100%;
+
+    .logo img {
+      max-height: 40px;
+    }
+  }
+
+  .site-header {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .title h1 {
+    color: variables.$bg-color;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .title p {
+    color: variables.$bg-color;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0;
+  }
+
+  .footer i {
+    color: variables.$bg-color;
+  }
+
+  .nav i {
+    color: variables.$bg-color;
+
+    &:hover {
+      color: variables.$secondary-color;
+    }
+  }

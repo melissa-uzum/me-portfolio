@@ -1,0 +1,37 @@
+@use "_variables";
+
+
+html, body {
+    background-color: variables.$bg-color;
+    color: variables.$text-color;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: variables.$text-color;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+  }
+
+  p, td, th, li, dd {
+    margin-bottom: 1em;
+    overflow-wrap: break-word;
+    text-align: justify;
+  }
+
+  a {
+    color: variables.$primary-color;
+    text-decoration: none;
+
+    &:hover {
+      color: variables.$secondary-color;
+    }
+  }

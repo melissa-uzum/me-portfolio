@@ -1,0 +1,24 @@
+@use "_variables";
+
+.nav a {
+    color: variables.$bg-color;
+    text-decoration: none;
+
+    &:hover {
+      color: variables.$secondary-color;
+    }
+  }
+
+  li {
+    color: variables.$primary-color;
+    margin-bottom: 0.5em;
+  }
+
+  ul {
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+
+    li {
+      margin-bottom: 0.5em;
+    }
+  }

@@ -1,0 +1,43 @@
+@use "_variables";
+
+.header {
+    align-items: center;
+    background-color: variables.$primary-color;
+    color: variables.$bg-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    width: 100%;
+
+    .logo img {
+      max-height: 40px;
+    }
+  }
+
+  @media (width: 768px) {
+    .nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav li {
+      margin-right: 0;
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .technology-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+      display: none;
+    }
+
+    .content {
+      padding: 1.5rem;
+    }
+  }

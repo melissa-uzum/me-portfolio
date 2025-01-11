@@ -1,0 +1,36 @@
+{% include 'incl/header.twig' %}
+{% include 'incl/nav.twig' %}
+
+<section class="gallery-container">
+    <h1 class="title">Gallery</h1>
+    <div class="grid">
+        {% for i in 1..9 %}
+        <div class="grid-item">
+            <a href="{{ base_url }}/assets/img/cats/cat{{ i }}.jpeg" target="_blank">
+                <img
+                    src="{{ base_url }}/assets/cimage/img.php?src=cats/cat{{ i }}.jpeg&w=300&h=300&crop-to-fit"
+                    srcset="
+                        {{ base_url }}/assets/cimage/img.php?src=cats/cat{{ i }}.jpeg&w=300&h=300&crop-to-fit 300w,
+                        {{ base_url }}/assets/cimage/img.php?src=cats/cat{{ i }}.jpeg&w=900&h=900&crop-to-fit 900w"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    alt="Bild {{ i }}">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="youtube-container">
+    <h2 class="title">My Favorite YouTube Video</h2>
+    <div class="video-wrapper">
+        <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+{% include 'incl/footer.twig' %}

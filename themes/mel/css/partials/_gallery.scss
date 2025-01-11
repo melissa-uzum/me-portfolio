@@ -1,0 +1,75 @@
+@use "_variables";
+.gallery-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+
+  .grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: 1fr;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .grid-item {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: variables.$text-color;
+  }
+}
+
+.youtube-container {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+
+  .title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: variables.$text-color;
+  }
+
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+}

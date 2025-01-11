@@ -23,3 +23,4 @@ Välkommen till mina rapporter. Här kommer jag att utföra analyser av tre olik
 3. [Analys av designprinciper](/dbwebb/design/me/portfolio/analysis/03_design_principles/)
    Undersök hur väl webbplatser följer etablerade designprinciper.
 
+No modifications can be made as there is no selected code to improve.
