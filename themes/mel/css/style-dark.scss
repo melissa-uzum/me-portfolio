@@ -1,20 +1,19 @@
-@use "./partials/_gallery";
-@use "./partials/_variables";
-@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap";
+@use "./partials/gallery";
+@use "./partials/variables";
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap";
 @import "normalize.css";
 
-$primary-color: #1b263b;
-$secondary-color: #3e5c76;
-$text-color: #e0e6ed;
+$primary-color: #0f1624;
+$secondary-color: #a2c9eb;
+$text-color: #fff;
 $bg-color: #0f172a;
 $card-bg-color: #1e293b;
-$border-color: #334155;
-$shadow-color: rgb(0 0 0 / 30%);
-$light-gray: #2d3748;
-$highlight-color: #00b4d8;
-$muted-text-color: #a0aec0;
-
+$border-color: #202020;
+$shadow-color: #000;
+$light-gray: #dae8ff;
+$highlight-color: #fff;
+$muted-text-color: #eff6ff;
+$white: #fff;
 
 * {
   box-sizing: border-box;
@@ -43,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, td, th, li, dd {
+  color: $text-color;
   margin-bottom: 1em;
   overflow-wrap: break-word;
   text-align: justify;
@@ -50,6 +50,7 @@ p, td, th, li, dd {
 
 a {
   color: $highlight-color;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -88,7 +89,7 @@ img {
 }
 
 i {
-  color: $primary-color;
+  color: $highlight-color;
   font-size: 1.2em;
   margin-right: 0.5em;
 }
@@ -331,5 +332,15 @@ blockquote {
 @media (width >= 769px) and (width <= 1024px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+ul li a {
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    color: $highlight-color;
+    text-decoration: underline;
   }
 }

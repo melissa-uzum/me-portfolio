@@ -2,17 +2,17 @@
 # Basic
 #
 site_title: Design v3               # The title of your website
-base_url: /~meuz24/dbwebb-kurser/design/me/portfolio                            # Pico will try to guess its base URL, if this fails, override it here;
+base_url: /dbwebb/design/me/portfolio                         # Pico will try to guess its base URL, if this fails, override it here;
                                     #     Example: https://example.com/pico/
 rewrite_url: ~                      # A boolean (true or false) indicating whether URL rewriting is forced
-debug: true                            # Set this to true to enable Pico's debug mode
+debug: ~                            # Set this to true to enable Pico's debug mode
 timezone: ~                         # Your PHP installation might require you to manually specify a timezone
 
 ##
 # Theme
 #
 theme: mel                      # The name of your custom theme
-themes_url: ~                       # Pico will try to guess the URL to the themes dir of your installation;
+themes_url:                        # Pico will try to guess the URL to the themes dir of your installation;
                                     #     If this fails, override it here. Example: https://example.com/pico/themes/
 theme_config:                       # Additional theme-specific config
     widescreen: false               # Default theme: Use more horizontal space (i.e. make the site container wider)
@@ -63,28 +63,28 @@ shaded_url: themes/shared     # You can access custom settings in themes using {
 #
 technologies:
   css:
-    url: /~meuz24/dbwebb-kurser/design/me/portfolio/technology/css
+    url: /dbwebb/design/me/portfolio/technology/css
     title: CSS
   html:
-    url: /~meuz24/dbwebb-kurser/design/me/portfolio/technology/html
+    url: /dbwebb/design/me/portfolio/technology/html
     title: HTML
   scss:
-    url: /~meuz24/dbwebb-kurser/design/me/portfolio/technology/scss
+    url: /dbwebb/design/me/portfolio/technology/scss
     title: SCSS
   javascript:
-    url: /~meuz24/dbwebb-kurser/design/me/portfolio/technology/javascript
+    url: /dbwebb/design/me/portfolio/technology/javascript
     title: JavaScript
   fontawesome:
-    url: /~meuz24/dbwebb-kurser/design/me/portfolio/technology/fontawesome
+    url: /dbwebb/design/me/portfolio/technology/fontawesome
     title: Font Awesome
   googlefonts:
-    url: /~meuz24/dbwebb-kurser/design/me/portfolio/technology/googlefonts
+    url: /dbwebb/design/me/portfolio/technology/googlefonts
     title: Google Fonts
   pico:
-    url: /~meuz24/dbwebb-kurser/design/me/portfolio/technology/pico
+    url: /dbwebb/design/me/portfolio/technology/pico
     title: Pico
   coolors:
-    url: /~meuz24/dbwebb-kurser/design/me/portfolio/technology/coolors
+    url: /dbwebb/design/me/portfolio/technology/coolors
     title: Coolors
 
 ##
@@ -117,3 +117,5 @@ sidebar:
       url: /dbwebb/design/me/portfolio/technology/coolors
       title: Coolors
 
+templates:
+  gallery: "themes/mel/gallery.twig"

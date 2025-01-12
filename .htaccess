@@ -1,4 +1,8 @@
 RewriteEngine On
+RewriteBase /~meuz24/dbwebb-kurser/design/me/portfolio/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
 # May be required to access sub directories
 #RewriteBase /
 

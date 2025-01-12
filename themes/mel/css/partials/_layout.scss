@@ -1,3 +1,5 @@
+@use "variables";
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -6,24 +8,48 @@
     max-width: 1200px;
     padding: 1rem;
 
-    @media (max-width: 768px) {
+    @media (width <= 768px) {
       grid-template-columns: 1fr;
     }
 
-    @media (min-width: 769px) and (max-width: 1024px) {
+    @media (width >= 769px) and (width <= 1024px) {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   .technology-layout {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 1rem;
-    margin: 2rem auto;
-    max-width: 1200px;
-    padding: 1rem;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 1000px;
+    padding: 2rem;
 
-    @media (max-width: 768px) {
+    @media (width <= 768px) {
       grid-template-columns: 1fr;
     }
+}
+
+.sidebar {
+  background-color: variables.$sidebar-bg-color;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px variables.$box-shadow-color;
+}
+
+.sidebar h3 {
+  color: variables.$primary-color;
+  font-weight: bold;
+}
+
+.sidebar a {
+  display: block;
+  padding: 0.5rem 0;
+  color: variables.$text-color;
+  font-weight: bold;
+
+  &:hover {
+      color: variables.$primary-color;
+      text-decoration: underline;
   }
+}

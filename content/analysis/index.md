@@ -17,10 +17,10 @@ Välkommen till mina rapporter. Här kommer jag att utföra analyser av tre olik
 1. [Färganalys](/~meuz24/dbwebb-kurser/design/me/portfolio/analysis/01_colors/)
    Utför en analys av färgscheman och typografi på olika webbplatser.
 
-2. [Laddningstidsanalys](/dbwebb/design/me/portfolio/analysis/02_load/)
+2. [Laddningstidsanalys](/~meuz24/dbwebb-kurser/design/me/portfolio/analysis/02_load/)
    Analysera laddningstider och optimering på olika webbplatser.
 
-3. [Analys av designprinciper](/dbwebb/design/me/portfolio/analysis/03_design_principles/)
+3. [Analys av designprinciper](/~meuz24/dbwebb-kurser/design/me/portfolio/analysis/03_design_principles/)
    Undersök hur väl webbplatser följer etablerade designprinciper.
 
 No modifications can be made as there is no selected code to improve.

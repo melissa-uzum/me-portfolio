@@ -1,11 +1,11 @@
 ---
-Title: Om
-Description: Information om teknikerna som används i min portfölj.
+title: About
+hidden: false
 ---
 
 # Om den här sidan
 
-Här är en kort beskrivning av de tekniker jag använder på sidan:
+## Tekniker som används
 
 - <i class="fa-brands fa-html5"></i> **HTML** och <i class="fa-brands fa-css3-alt"></i> **CSS** för struktur och design.
 - <i class="fa-brands fa-sass"></i> **SCSS** för mer avancerad styling.

@@ -1,5 +1,71 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap";
 @import "normalize.css";
+.gallery-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+.gallery-container .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (width >= 768px) {
+  .gallery-container .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.gallery-container .grid-item {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.gallery-container .grid-item:hover {
+  transform: scale(1.05);
+}
+.gallery-container .grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.gallery-container .title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2b2d42;
+}
+
+.youtube-container {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+.youtube-container .title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2b2d42;
+}
+.youtube-container .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.youtube-container .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 * {
   box-sizing: border-box;
@@ -9,7 +75,7 @@
 
 html, body {
   background-color: #0f172a;
-  color: #e0e6ed;
+  color: #fff;
   height: 100%;
   font-family: Poppins, sans-serif;
 }
@@ -22,30 +88,32 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #e0e6ed;
+  color: #fff;
   font-weight: bold;
   margin-bottom: 0.8em;
 }
 
 p, td, th, li, dd {
+  color: #fff;
   margin-bottom: 1em;
   overflow-wrap: break-word;
   text-align: justify;
 }
 
 a {
-  color: #00b4d8;
+  color: #fff;
+  font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
-  color: #3e5c76;
+  color: #a2c9eb;
 }
 
 .main {
   background-color: #1e293b;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px #000;
   flex: 1 0 auto;
   margin: 0 auto;
   max-width: 800px;
@@ -65,27 +133,27 @@ img {
 }
 
 .image-container img {
-  border: 4px solid #3e5c76;
+  border: 4px solid #a2c9eb;
   border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px #000;
   height: 100px;
   max-width: 100px;
 }
 
 i {
-  color: #1b263b;
+  color: #fff;
   font-size: 1.2em;
   margin-right: 0.5em;
 }
 
 i:hover {
-  color: #3e5c76;
+  color: #a2c9eb;
 }
 
 .header {
   align-items: center;
-  background-color: #1b263b;
-  color: #a0aec0;
+  background-color: #0f1624;
+  color: #eff6ff;
   display: flex;
   justify-content: space-between;
   padding: 1em 2em;
@@ -104,39 +172,39 @@ i:hover {
 }
 
 .title h1 {
-  color: #a0aec0;
+  color: #eff6ff;
   font-size: 1.8rem;
   margin: 0;
 }
 
 .title p {
-  color: #a0aec0;
+  color: #eff6ff;
   font-size: 1rem;
   font-style: italic;
   margin: 0;
 }
 
 .nav a {
-  color: #a0aec0;
+  color: #eff6ff;
 }
 
 .footer i {
-  color: #a0aec0;
+  color: #eff6ff;
 }
 
 .nav i {
-  color: #a0aec0;
+  color: #eff6ff;
 }
 
 .nav i:hover {
-  color: #3e5c76;
+  color: #a2c9eb;
 }
 
 .footer {
   align-items: center;
-  background-color: #1b263b;
-  border-top: 2px solid #3e5c76;
-  color: #a0aec0;
+  background-color: #0f1624;
+  border-top: 2px solid #a2c9eb;
+  color: #eff6ff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -145,7 +213,7 @@ i:hover {
 }
 
 .grid-item a {
-  color: #e0e6ed;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -166,15 +234,15 @@ ol, ul {
 }
 
 ul li {
-  color: #a0aec0;
+  color: #eff6ff;
   margin-bottom: 0.5em;
 }
 
 code {
-  background: #2d3748;
-  border: 1px solid #334155;
+  background: #dae8ff;
+  border: 1px solid #202020;
   border-radius: 4px;
-  color: #e0e6ed;
+  color: #fff;
   font-family: monospace;
   font-size: 0.85rem;
   margin: 0 0.1em;
@@ -182,10 +250,10 @@ code {
 }
 
 pre {
-  background: #2d3748;
-  border: 1px solid #334155;
+  background: #dae8ff;
+  border: 1px solid #202020;
   border-radius: 8px;
-  color: #a0aec0;
+  color: #eff6ff;
   font-family: monospace;
   margin-bottom: 1em;
   overflow-x: auto;
@@ -193,9 +261,9 @@ pre {
 }
 
 blockquote {
-  background: #2d3748;
-  border-left: 5px solid #3e5c76;
-  color: #a0aec0;
+  background: #dae8ff;
+  border-left: 5px solid #a2c9eb;
+  color: #eff6ff;
   font-style: italic;
   margin: 1em 0;
   padding: 1em;
@@ -214,14 +282,14 @@ blockquote {
   grid-column: 1/-1;
   text-align: center;
   font-size: 2rem;
-  color: #e0e6ed;
+  color: #fff;
   margin-bottom: 1rem;
 }
 
 .grid-item {
   background-color: #1e293b;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px #000;
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -229,7 +297,7 @@ blockquote {
 
 .grid-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px #000;
 }
 
 .grid-item h2 {
@@ -239,7 +307,7 @@ blockquote {
 
 .grid-item p {
   font-size: 1rem;
-  color: #a0aec0;
+  color: #eff6ff;
 }
 
 .technology-layout {
@@ -254,14 +322,14 @@ blockquote {
 .sidebar {
   background-color: #1e293b;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px #000;
   padding: 1rem;
 }
 
 .sidebar h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #e0e6ed;
+  color: #fff;
 }
 
 .sidebar ul {
@@ -274,7 +342,7 @@ blockquote {
 }
 
 .sidebar ul li a {
-  color: #00b4d8;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -285,17 +353,17 @@ blockquote {
 .content {
   background-color: #1e293b;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px #000;
   padding: 2rem;
 }
 
 .content h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #e0e6ed;
+  color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .grid-container {
     grid-template-columns: 1fr;
   }
@@ -309,10 +377,18 @@ blockquote {
     padding: 1.5rem;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (width >= 769px) and (width <= 1024px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style-dark.css.map */

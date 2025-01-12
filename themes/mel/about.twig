@@ -1,0 +1,10 @@
+{% include 'incl/header.twig' %}
+
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+    <h1>{{ meta.title }}</h1>
+    {{ content|raw }}
+</div>
+
+    {% include 'incl/footer.twig' %}

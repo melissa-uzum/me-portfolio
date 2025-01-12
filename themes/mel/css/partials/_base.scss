@@ -1,12 +1,14 @@
-@use "_variables";
-
+@use "variables";
 
 html, body {
-    background-color: variables.$bg-color;
-    color: variables.$text-color;
-    height: 100%;
-    font-family: "Poppins", sans-serif;
-  }
+  height: 100%;
+  margin: 0;
+  background-color: variables.$bg-color;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
 
   body {
     display: flex;
@@ -17,11 +19,13 @@ html, body {
 
   h1, h2, h3, h4, h5, h6 {
     color: variables.$text-color;
+    font-family: Poppins, sans-serif;
     font-weight: bold;
     margin-bottom: 0.8em;
   }
 
   p, td, th, li, dd {
+    color: variables.$text-color;
     margin-bottom: 1em;
     overflow-wrap: break-word;
     text-align: justify;

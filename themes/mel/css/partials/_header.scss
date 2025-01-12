@@ -1,43 +1,86 @@
-@use "_variables";
+@use "variables";
 
 .header {
-    align-items: center;
-    background-color: variables.$primary-color;
-    color: variables.$bg-color;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 2em;
-    width: 100%;
+  align-items: center;
+  background-color: variables.$primary-color;
+  color: variables.$bg-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  width: 100%;
 
-    .logo img {
+  .logo img {
       max-height: 40px;
-    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+          margin-right: 1rem;
+
+          &:last-child {
+              margin-right: 0;
+          }
+      }
+  }
+}
+
+.theme-toggle {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  button {
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
   }
 
-  @media (width: 768px) {
-    .nav ul {
+  span {
+      font-size: 1rem;
+      color: #fff;
+  }
+}
+
+@media (width <= 768px) {
+  .nav ul {
       flex-direction: column;
       align-items: flex-start;
-    }
+  }
 
-    .nav li {
+  .nav li {
       margin-right: 0;
       margin-bottom: 1rem;
 
       &:last-child {
-        margin-bottom: 0;
+          margin-bottom: 0;
       }
-    }
-
-    .technology-layout {
-      grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-      display: none;
-    }
-
-    .content {
-      padding: 1.5rem;
-    }
   }
+
+  .technology-layout {
+      grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+      display: none;
+  }
+
+  .content {
+      padding: 1.5rem;
+  }
+}

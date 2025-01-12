@@ -19,8 +19,16 @@ Jag använde följande verktyg för att samla in och analysera data:
 ).
 
 ### Inbäddat kalkylark
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTn7AzJP3EmS6k1rWbTRP5Xyzg7j2Eo8V4ZHJ0jvhV_DYgA1GQYfjwBdnpOwHXmsT8RDm4KyNdnVDhL/pubhtml?widget=true&amp;headers=false" width="800" height="600"></iframe>
-
+<section aria-labelledby="google-sheet-section">
+    <h2 id="google-sheet-section">Inbäddat kalkylark</h2>
+    <p>Här visas data som sammanställts från laddningstidsanalysen.</p>
+    <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTn7AzJP3EmS6k1rWbTRP5Xyzg7j2Eo8V4ZHJ0jvhV_DYgA1GQYfjwBdnpOwHXmsT8RDm4KyNdnVDhL/pubhtml?widget=true&amp;headers=false"
+        width="700"
+        height="500"
+        title="Google Kalkylark: Laddningstidsanalys">
+    </iframe>
+</section>
 
 ### Steg i analysen
 1. För varje webbplats valde jag tre sidor att analysera.
@@ -32,7 +40,7 @@ Jag använde följande verktyg för att samla in och analysera data:
 
 ### **Apple**
 #### Snapshot
-![Snapshot av Apple](content/analysis/img/apple.png)
+![Snapshot av Apple](/~meuz24/dbwebb-kurser/design/me/portfolio/content/analysis/img/apple.png)
 
 #### Sidor analyserade
 [Startsida](https://www.apple.com)
@@ -78,7 +86,7 @@ Jag använde följande verktyg för att samla in och analysera data:
 
 ### **Pågen**
 #### Snapshot
-![Snapshot av Pågen](content/analysis/img/pagen.png)
+![Snapshot av Pågen](/~meuz24/dbwebb-kurser/design/me/portfolio/content/analysis/img/pagen.png)
 
 #### Sidor analyserade
 1. [Startsida](https://www.pagen.se)
@@ -125,7 +133,8 @@ Jag använde följande verktyg för att samla in och analysera data:
 
 ### **Elden Ring: Shadow of the Erdtree**
 #### Snapshot
-![Snapshot av Elden Ring](content/analysis/img/elden_ring.png)
+![Snapshot av Elden Ring](/~meuz24/dbwebb-kurser/design/me/portfolio/content/analysis/img/elden_ring.png)
+
 
 #### Sidor analyserade
 1. [Startsida](https://www.eldenring.com)

@@ -7,12 +7,15 @@ Description: This is our index page.
     <img src="assets/img/me.jpg" alt="Bild på mig">
 </div>
 
-Hej och välkommen till min portfolio! Jag heter Melissa Üzüm och studerar Webbprogrammering!
+# Hej och välkommen till min portfolio!
 
+Jag heter Melissa Üzüm och studerar Webbprogrammering!
 
-### Om mig
+## Om mig
 
 Jag har nu påbörjat läsperiod 2, första perioden gick väldigt bra och jag lärde mig väldigt mycket! Jag arbetar som säljare på Apple samtidigt som jag studerar.
+
+### Mina intressen
 
 När jag inte programmerar, tycker jag om att:
 

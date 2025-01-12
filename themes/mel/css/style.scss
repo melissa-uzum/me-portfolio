@@ -1,11 +1,11 @@
-@use "./partials/_variables";
-@use "./partials/_reset";
-@use "./partials/_base";
-@use "./partials/_layout";
-@use "./partials/_components";
-@use "./partials/_gallery";
-@use "./partials/_header";
-@use "./partials/_footer";
+@use "./partials/variables";
+@use "./partials/reset";
+@use "./partials/base";
+@use "./partials/layout";
+@use "./partials/components";
+@use "./partials/gallery";
+@use "./partials/header";
+@use "./partials/footer";
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap";
 
 .theme-toggle button {
@@ -164,3 +164,4 @@ i {
   max-width: 1200px;
   padding: 1rem;
 }
+

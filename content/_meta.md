@@ -1,5 +1,5 @@
 ---
-Logo: image/android-chrome-192x192.png
+Logo: assets/img/android-chrome-192x192.png
 Tagline: My portfolio.
 Social:
     - title: Link till sidans github repo.
